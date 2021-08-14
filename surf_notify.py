@@ -21,6 +21,7 @@ def is_map_in(map, text):
 
 # Defining some stuff
 url = "https://www.gametracker.com/search/csgo/AU/?query=KZG"
+urltop200 = "https://sourcequery.yepoleb.at/query?server=202.130.34.223%3A27060"
 
 # Loading webhook url
 file = open("surf_notify_webhook.txt")
@@ -35,10 +36,14 @@ with open('surf_notify_maplist.txt') as f:
 f = requests.get(url)
 ftext = f.text
 
+f2 = requests.get(urltop200)
+ftext2 = f2.text
+
 # Search for specified maps in html text and send response
 for map in maps:
     result = is_map_in(map, ftext)
-    if result == True:
+    result2 = is_map_in(map, ftext2)
+    if result == True or result2 == True:
         webhook = Webhook.from_url(webhooklink, adapter=RequestsWebhookAdapter())
         timestamp = datetime.today()
         strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
@@ -58,7 +63,8 @@ while True:
     sleep(x - time() % x)
     for map in maps:
         result = is_map_in(map, ftext)
-        if result == True:
+        result2 = is_map_in(map, ftext2)
+        if result == True or result2 == True:
             webhook = Webhook.from_url(webhooklink, adapter=RequestsWebhookAdapter())
             timestamp = datetime.today()
             strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
