@@ -20,7 +20,9 @@ INSTALLATION INSTRUCTIONS:
 2. Specify maps you want to track by editing surf_notify_maplist.txt. Instructions in file.
 3. Specify Discord webhook URL by editing surf_notify_webhook.txt. Instructions in file.
     - Webhook create guide here: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
-4. Navigate to surf_notify folder in powershell and execute surf_notify.py  --->  cd 'path_of_folder' followed by python .\surf_notify.py
+4. Navigate to surf_notify folder in powershell and execute surf_notify.py
+    - cd 'path_of_folder'
+    - python .\surf_notify.py
 
 NOTE: By default script checks maps once when opening then every 15 minutes after. To change this you can open surf_notify.py in an editor and change the value of x on line 61. Number taken is in seconds.
 
