@@ -1,1 +1,1 @@
-<replace THIS line with webhook url. Make sure not to leave any whitespace or newlines>
+Replace THIS line with webhook url. Make sure not to leave any whitespace or newlines
