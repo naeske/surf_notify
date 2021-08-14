@@ -16,7 +16,7 @@ REQUIREMENTS:
  
 INSTALLATION INSTRUCTIONS:
  
-1. Download and unzip folder.
+1. Download repo as zip and unzip folder.
 2. Specify maps you want to track by editing surf_notify_maplist.txt. Instructions in file.
 3. Specify Discord webhook URL by editing surf_notify_webhook.txt. Instructions in file.
     - Webhook create guide here: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
