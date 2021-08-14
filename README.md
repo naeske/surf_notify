@@ -10,7 +10,7 @@ Created by dip
 REQUIREMENTS:
   - Python 3.x (Download from https://www.python.org/downloads/)
       - Make sure to add python to your PATH during install (checkbox)
-  - Python library's (Execute these commands in powershell): 
+  - Python modules (Execute these commands in powershell): 
       - python -m pip install requests 
       - py -3 -m pip install -U discord.py
  
