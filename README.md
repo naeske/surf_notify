@@ -32,6 +32,5 @@ NOTE: By default script checks maps once when opening then every 15 minutes afte
 ![discord push](https://i.imgur.com/ZdB406o.png)
 
 Any queries reach me:
-
 Gumo#7171 (Discord)
 
