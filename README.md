@@ -21,7 +21,6 @@ INSTALLATION INSTRUCTIONS:
 
 NOTE: By default script checks maps once when opening then every 15 minutes after. To change this you can open surf_notify.py in an editor and change the value of x on line 56. Number taken is in seconds.
 
-Pictures here: 
 
 ![running in shell](https://i.imgur.com/MTtwGIL.png)
 
