@@ -6,8 +6,3 @@ surf_3
 surf_81st_network
 surf_amantiss_csgo_
 surf_amplitude_light
-surf_annoyance_njv
-surf_cavemissile_fix
-surf_colors_beta1
-surf_colours
-surf_commune_beta11
