@@ -57,7 +57,7 @@ if maprunning == False:
     print("No [more] maps of interest currently running. --- " + strtimestamp)
 
 # Check maps every x seconds
-x = 60
+x = 300
 while True:
     sleep(x - time() % x)
 
