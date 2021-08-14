@@ -35,7 +35,6 @@ with open('surf_notify_maplist.txt') as f:
 # Pull html from servers page and convert to text
 f = requests.get(url)
 ftext = f.text
-
 f2 = requests.get(urltop200)
 ftext2 = f2.text
 
@@ -58,9 +57,16 @@ if maprunning == False:
     print("No [more] maps of interest currently running. --- " + strtimestamp)
 
 # Check maps every x seconds
-x = 900
+x = 60
 while True:
     sleep(x - time() % x)
+
+# Re-pull html from servers page and convert to text
+    f = requests.get(url)
+    ftext = f.text
+    f2 = requests.get(urltop200)
+    ftext2 = f2.text
+
     for map in maps:
         result = is_map_in(map, ftext)
         result2 = is_map_in(map, ftext2)
