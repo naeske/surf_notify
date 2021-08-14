@@ -15,6 +15,8 @@ from discord import Webhook, RequestsWebhookAdapter
 from datetime import datetime
 from time import time, sleep
 
+print('Welcome to surf_notify, please keep this window open')
+
 # html search function
 def is_map_in(map, text):
     return re.search(r"\b{}\b".format(map), text, re.IGNORECASE) is not None
@@ -57,7 +59,7 @@ if maprunning == False:
     print("No [more] maps of interest currently running. --- " + strtimestamp)
 
 # Check maps every x seconds
-x = 300
+x = 900
 while True:
     sleep(x - time() % x)
 
