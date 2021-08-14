@@ -1,4 +1,4 @@
-<maps you want to track formatted 1 per line, case sensitive as seen below. Ensure no whitespace or newlines (because I'm lazy)>
+<maps you want to track formatted 1 per line, case sensitive as seen below. Ensure no whitespace or empty lines (because I'm lazy)>
 surf_driftless
 surf_classics
 surf_da_whoop
