@@ -15,7 +15,10 @@ from discord import Webhook, RequestsWebhookAdapter
 from datetime import datetime
 from time import time, sleep
 
-print('Welcome to surf_notify, please keep this window open.')
+x = 900
+
+print('\nWelcome to surf_notify, made by dip')
+print('Please keep this window open. Fetching server status now. \n')
 
 # html search function
 def is_map_in(map, text):
@@ -40,6 +43,8 @@ ftext = f.text
 f2 = requests.get(urltop200)
 ftext2 = f2.text
 
+xstr = str(x / 60)
+
 # Search for specified maps in html text and send response
 for map in maps:
     result = is_map_in(map, ftext)
@@ -49,18 +54,17 @@ for map in maps:
         timestamp = datetime.today()
         strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
         webhook.send('Map of interest [' + map + '] is currently running!' + ' --- ' + strtimestamp)
-        print(map + ' detected. Pushing notification to Discord.')
+        print(map + ' detected. Pushing notification to Discord. \n')
     else:
         maprunning = False
 
 if maprunning == False:
     timestamp = datetime.today()
     strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
-    print("No [more] maps of interest currently running. --- " + strtimestamp)
-    print("Currently checking every " + (x / 60) + " Minutes.")
+    print("No [more] maps of interest currently running. --- " + strtimestamp + '\n')
+    print("Checking maps every " + xstr + " minutes. \n")
 
 # Check maps every x seconds
-x = 900
 while True:
     sleep(x - time() % x)
 
@@ -85,4 +89,4 @@ while True:
     if maprunning == False:
         timestamp = datetime.today()
         strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
-        print("No [more] maps of interest currently running. --- " + strtimestamp)
+        print("No [more] maps of interest currently running. --- " + strtimestamp + '\n')
