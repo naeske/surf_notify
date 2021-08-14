@@ -50,7 +50,7 @@ for map in maps:
 if maprunning == False:
     timestamp = datetime.today()
     strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
-    print("No more maps of interest currently running. --- " + strtimestamp)
+    print("No [more] maps of interest currently running. --- " + strtimestamp)
 
 # Check maps every x seconds
 x = 900
@@ -70,4 +70,4 @@ while True:
     if maprunning == False:
         timestamp = datetime.today()
         strtimestamp = timestamp.strftime("%d/%m/%Y %H:%M:%S")
-        print("No more maps of interest currently running. --- " + strtimestamp)
+        print("No [more] maps of interest currently running. --- " + strtimestamp)
