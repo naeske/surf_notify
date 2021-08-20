@@ -21,15 +21,15 @@ INSTALLATION INSTRUCTIONS:
 3. Specify Discord webhook URL by editing surf_notify_webhook.txt. Instructions in file.
     - Webhook create guide here: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
 4. Navigate to surf_notify folder in powershell and execute surf_notify.py
-    - cd 'path_of_folder'
+    - cd 'path_to_folder'
     - python .\surf_notify.py
 
 NOTE: By default script checks maps once when opening then every 15 minutes after. To change this you can open surf_notify.py in an editor and change the value of variable x on line 18. Number taken is in seconds.
 
 
-![running in shell](https://i.imgur.com/MTtwGIL.png)
+![running in shell](https://i.imgur.com/ec8TE4o.png)
 
-![discord push](https://i.imgur.com/ZdB406o.png)
+![discord push](https://i.imgur.com/As3z57e.png)
 
 Any queries reach me at:
 
